@@ -1,0 +1,14 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\player.o
+./release\audioitem.o
+./release\buttontool.o
+./release\combotool.o
+./release\moc_mainwindow.o
+./release\moc_player.o
+./release\moc_audioitem.o
+./release\moc_buttontool.o
+./release\moc_combotool.o
+./release\qrc_radit.o
+);

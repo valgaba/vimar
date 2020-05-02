@@ -1,0 +1,14 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\player.o
+./debug\audioitem.o
+./debug\buttontool.o
+./debug\combotool.o
+./debug\moc_mainwindow.o
+./debug\moc_player.o
+./debug\moc_audioitem.o
+./debug\moc_buttontool.o
+./debug\moc_combotool.o
+./debug\qrc_radit.o
+);
