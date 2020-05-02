@@ -14,12 +14,19 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    gui/player.cpp
+    gui/player.cpp \
+    gui/audioitem.cpp \
+    gui/buttontool.cpp \
+    gui/combotool.cpp
 
 HEADERS  += mainwindow.h \
-    gui/player.h
+    gui/player.h \
+    gui/audioitem.h \
+    gui/buttontool.h \
+    gui/combotool.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    gui/AudioItem.ui
 
 
 

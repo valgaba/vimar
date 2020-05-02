@@ -3,8 +3,8 @@
 
 
 #include <QFrame>
-
-
+#include <QVBoxLayout>
+#include <QSpacerItem>
 
 class Player: public QFrame
 
@@ -13,7 +13,8 @@ class Player: public QFrame
 
     private:
 
-
+ QVBoxLayout *verticalLayoutArea;
+ QSpacerItem *verticalSpacer;
 
     public:
 
@@ -22,6 +23,11 @@ class Player: public QFrame
 
 
     protected:
+
+        void dragEnterEvent(QDragEnterEvent *event);
+        void dropEvent(QDropEvent *event);
+        void  resizeEvent(QResizeEvent *event);
+
 
     private slots:
 
