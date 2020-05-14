@@ -1,5 +1,4 @@
 
-<!-- #######  THIS IS A COMMENT - Visible only in the source editor #########-->
 <h1 style="text-align: center;">Bienvenidos el proyecto Vimar</h1>
 <p>&nbsp;</p>
 <p><span style="font-size: large;">Vimar es el nuevo desarrollo que viene de la mano de Radit, aprovechando todo el desarrollo radit, se est&aacute; implementando una nueva aplicaci&oacute;n.&nbsp;</span></p>
