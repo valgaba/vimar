@@ -6,4 +6,4 @@
 <p>&nbsp;</p>
 
 <a> <img src="https://github.com/valgaba21/vimar/blob/master/screenshots/pan2.jpg"  style="max-width:100%;"></a>
-<a> <img src="https://github.com/valgaba21/vimar/blob/master/screenshots/pan3.jpg"  style="max-width:100%;"></a>
+<a> <img src="https://github.com/valgaba21/vimar/blob/master/screenshots/pan1.jpg"  style="max-width:100%;"></a>
