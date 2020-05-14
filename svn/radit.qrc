@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/PlayerItem">
+        <file>icons/Stop.svg</file>
         <file>icons/Pause.svg</file>
         <file>icons/Play.svg</file>
         <file>icons/Next.svg</file>
@@ -11,5 +12,7 @@
         <file>icons/Load.svg</file>
         <file>icons/Save.svg</file>
         <file>icons/Color.svg</file>
+        <file>icons/Tools.svg</file>
+        <file>icons/New.svg</file>
     </qresource>
 </RCC>

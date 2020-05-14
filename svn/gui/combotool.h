@@ -6,7 +6,6 @@
 #include <QString>
 #include <QComboBox>
 
-#include "ui_AudioItem.h"
 
 class ComboTool: public QFrame
 

@@ -16,13 +16,12 @@
 */
 
 
-
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QVBoxLayout>
+#include <QDebug>
 
-
-
+#include "bass.h"
 
 #include "gui/player.h"
 
@@ -31,6 +30,9 @@ MainWindow::MainWindow(QMainWindow *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+
+    IniAudio(); // abrimos el audio
 
 
 
@@ -81,8 +83,8 @@ MainWindow::MainWindow(QMainWindow *parent) :
                        verticalLayout_up_left->setSpacing(0);
                        verticalLayout_up_left->setContentsMargins(0, 0, 0, 0);
 
-                       Player *player4= new Player(ui->frame_up_left);
-                       verticalLayout_up_left->addWidget(player4);
+                      // Player *player4= new Player(ui->frame_up_left);
+                     //  verticalLayout_up_left->addWidget(player4);
 
 
 
@@ -105,3 +107,60 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+
+//------------------------------------------
+void MainWindow::IniAudio(){
+
+    BASS_DEVICEINFO i;
+
+
+    //bass configuration
+    BASS_SetConfig(BASS_CONFIG_BUFFER, 5000 );
+    // BASS_SetConfig(BASS_CONFIG_UPDATEPERIOD, 10);
+    BASS_SetConfig(BASS_CONFIG_NET_PLAYLIST,1); // enable playlist processing
+
+    // plugin
+
+    BASS_PluginFree(0);
+    QString Path=QCoreApplication::applicationDirPath().toLatin1();
+
+    #ifdef _WIN32
+        BASS_PluginLoad(Path.toLatin1() + "/Plugin/bass_aac.dll",0);
+        BASS_PluginLoad(Path.toLatin1() + "/Plugin/bassflac.dll",0);
+        BASS_PluginLoad(Path.toLatin1() + "/Plugin/basswma.dll",0);
+    #endif
+
+
+    #ifdef Q_OS_UNIX
+        BASS_PluginLoad(Path.toLatin1() + "/Plugin/libbass_aac.so",0);
+        BASS_PluginLoad(Path.toLatin1() + "/Plugin/libbassflac.so",0);
+    #endif
+
+
+
+        #ifdef Q_OS_UNIX
+          //  QString def(tr("Defecto")); //en linux añadimos otro el default
+          //  this->Dispositivo->addItem(def);
+        #endif
+
+
+     //****************** Abrimmos dispositivos de audio *****************************
+        for (int c=1;BASS_GetDeviceInfo(c,&i);c++)// device 1 = el primer dispositivo
+        {
+           if (i.flags&BASS_DEVICE_ENABLED){
+                 BASS_Init(c, 44100,0, 0, NULL);
+
+              }
+        }
+
+
+}
+
+
+
+
+
+
+
+

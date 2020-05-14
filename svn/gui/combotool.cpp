@@ -36,13 +36,6 @@ ComboTool::ComboTool(QWidget *parent):QFrame(parent){
 
 
 
-    QSizePolicy sizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Preferred);
-         sizePolicy.setHorizontalStretch(0);
-         sizePolicy.setVerticalStretch(0);
-         sizePolicy.setHeightForWidth(this->sizePolicy().hasHeightForWidth());
-         this->setSizePolicy(sizePolicy);
-
-
 
 
   QHBoxLayout * horizontalLayout = new QHBoxLayout(this);
@@ -50,7 +43,13 @@ ComboTool::ComboTool(QWidget *parent):QFrame(parent){
           horizontalLayout->setContentsMargins(0, 0, 0, 0);
 
           comboBox = new QComboBox(this);
+         // comboBox->setMaximumSize(QSize(50, 85));
 
+         /* QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+               sizePolicy.setHorizontalStretch(0);
+               sizePolicy.setVerticalStretch(0);
+               sizePolicy.setHeightForWidth(this->sizePolicy().hasHeightForWidth());
+               comboBox->setSizePolicy(sizePolicy);*/
 
 
 
@@ -61,11 +60,11 @@ ComboTool::ComboTool(QWidget *parent):QFrame(parent){
                 comboBox->setFont(font);
 
 
-          comboBox->insertItems(0, QStringList()
-                  << QApplication::translate("Form", "qqewewewew", 0, QApplication::UnicodeUTF8)
-                  << QApplication::translate("Form", "wewewewewew", 0, QApplication::UnicodeUTF8)
-                  << QApplication::translate("Form", "ewewewewew", 0, QApplication::UnicodeUTF8)
-                 );
+       /*  comboBox->insertItems(0, QStringList()
+                  << QApplication::translate("Form", "qrrrrrrrrrrrrrrrrrrrrrrrrq", 0, QApplication::UnicodeUTF8)
+                  << QApplication::translate("Form", "we", 0, QApplication::UnicodeUTF8)
+                  << QApplication::translate("Form", "ew", 0, QApplication::UnicodeUTF8)
+                 );*/
 
 
           comboBox->setStyleSheet(QString::fromUtf8("QComboBox {\n"

@@ -30,6 +30,7 @@ ButtonTool::ButtonTool(QWidget *parent):QPushButton(parent){
 
     this->setCheckable(false);
     this->setFlat(true);
+    this->setCursor(QCursor(Qt::PointingHandCursor));  //cambiamos el cursor
 
 
 this->setStyleSheet(QString::fromUtf8("QPushButton {\n"
@@ -44,10 +45,12 @@ this->setStyleSheet(QString::fromUtf8("QPushButton {\n"
                                       "QPushButtonr:unchecked:hover{\n"
                                       "background: #007ad9;}\n"
 
-                                      "QPushButton:pressed {\n"
+                                      "QPushButton:pressed{\n"
                                       "background-color: #007ad9;}\n"
 
-
+                                      "QToolTip{color:#ffffff;\n"
+                                      "background-color: rgb(51, 59, 79);\n"
+                                      " border: 1px solid #ffffff;}\n"
 
                                        ));
 

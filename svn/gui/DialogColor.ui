@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormDialogColor</class>
+ <widget class="QWidget" name="FormDialogColor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>226</width>
+    <height>86</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(51, 59, 79);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0">
+   <property name="spacing">
+    <number>9</number>
+   </property>
+   <property name="margin">
+    <number>9</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>8</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>9</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <property name="horizontalSpacing">
+       <number>5</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>0</number>
+      </property>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+   
+	background-color: rgb(255, 170, 0);
+    border-style: outset;
+    border-width: 1px;
+   
+   
+	border-color: rgb(255, 255, 255);
+    font: bold 14px;
+
+    
+}
+</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="pushButton_10">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: red;
+    border-style: outset;
+    border-width: 1px;
+   
+   
+	border-color: rgb(255, 255, 255);
+    font: bold 14px;
+
+    
+}
+</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="pushButton_8">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: red;
+    border-style: outset;
+    border-width: 1px;
+   
+   
+	border-color: rgb(255, 255, 255);
+    font: bold 14px;
+
+    
+}
+</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="pushButton_9">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: red;
+    border-style: outset;
+    border-width: 1px;
+   
+   
+	border-color: rgb(255, 255, 255);
+    font: bold 14px;
+
+    
+}
+</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: red;
+    border-style: outset;
+    border-width: 1px;
+   
+   
+	border-color: rgb(255, 255, 255);
+    font: bold 14px;
+
+    
+}
+</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(0, 170, 255);
+    border-style: outset;
+    border-width: 1px;
+   
+   
+	border-color: rgb(255, 255, 255);
+    font: bold 14px;
+
+    
+}
+</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="color1">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+   
+	background-color: rgb(58, 58, 58);
+    border-style: outset;
+    border-width: 1px;
+   
+   
+	border-color: rgb(255, 255, 255);
+    font: bold 14px;
+
+    
+}
+</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+   
+	background-color: rgb(0, 255, 127);
+    border-style: outset;
+    border-width: 1px;
+   
+   
+	border-color: rgb(255, 255, 255);
+    font: bold 14px;
+
+    
+}
+</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -10,7 +10,7 @@
 #include <QString>
 
 
-#include "ui_AudioItem.h"
+
 
 class ButtonTool: public QPushButton
 

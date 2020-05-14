@@ -4,6 +4,7 @@
 #include <QMainWindow>
 
 
+
 namespace Ui {
 class MainWindow;
 }
@@ -21,6 +22,10 @@ public:
 
 private:
     Ui::MainWindow *ui;
+
+    void IniAudio(); // iniciamos los dispositivos de audio
+
+
 };
 
 #endif // MAINWINDOW_H
