@@ -1,7 +1,9 @@
 
 <h1 style="text-align: center;">Bienvenidos el proyecto Vimar</h1>
 <p>&nbsp;</p>
-<p><span style="font-size: large;">Vimar es el nuevo desarrollo que viene de la mano de Radit, aprovechando todo el desarrollo radit, se est&aacute; implementando una nueva aplicaci&oacute;n.&nbsp;</span></p>
+<p><span style="font-size: large;">Vimar es el nuevo desarrollo que viene de la mano de Radit, aprovechando todo el desarrollo radit, se est&aacute; implementando una nueva aplicaci&oacute;n para las emisoras de radios.&nbsp;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">.&nbsp;</span></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
